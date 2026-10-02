@@ -1,0 +1,38 @@
+{
+  "name": "@steada1995/confio",
+  "version": "0.1.0",
+  "description": "Fail-fast configuration for Node monorepos: environment variables and secrets declared in one manifest, resolved before the service starts",
+  "keywords": [
+    "config",
+    "configuration",
+    "env",
+    "environment-variables",
+    "secrets",
+    "monorepo",
+    "fail-fast",
+    "12-factor"
+  ],
+  "homepage": "https://github.com/steada1995/confio#readme",
+  "bugs": {
+    "url": "https://github.com/steada1995/confio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steada1995/confio.git"
+  },
+  "license": "MIT",
+  "author": "Stefano Adamo <stefanoadamo14@gmail.com>",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test spec/*.spec.js"
+  }
+}

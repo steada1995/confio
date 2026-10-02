@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "db": {
+    "mongodb": {
+      "host":     { "source": "vault", "key": "prod/host" },
+      "password": {
+        "source": "vault",
+        "key": "prod/db-password",
+        "secret": true,
+        "extraOptions": { "VersionStage": "AWSPREVIOUS", "VersionId": "abc123" }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "db": {
+    "mongodb": {
+      "host":     { "source": "env",   "key": "MONGODB_HOST" },
+      "name":     { "source": "file",  "key": "mongodb_name" },
+      "password": { "source": "vault", "key": "prod/secret" }
+    }
+  }
+}

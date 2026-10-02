@@ -1,0 +1,9 @@
+{
+  "db": {
+    "mongodb": {
+      "host": "mongo.lab",
+      "name": "mydb",
+      "password": "secret-prod/secret"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "version": "1.0.0",
+  "db": { "mongodb": { "name": { "source": "file", "key": "mongodb_name", "secret": true } } }
+}

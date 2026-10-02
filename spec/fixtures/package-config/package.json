@@ -1,0 +1,7 @@
+{
+  "name": "package-config-fixture",
+  "private": true,
+  "dependencies": {
+    "@fixture/config": "1.0.0"
+  }
+}

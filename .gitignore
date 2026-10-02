@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Test & coverage
+coverage/
+.nyc_output/
+**/.run-secrets/
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# Caches
+.npm
+.eslintcache
+.node_repl_history
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+*.swp
+*.swo
+*~
+
+# Local overrides
+config.local.json
+*.local.json
+
+# Agent settings: keep the personal file out, the shared .claude/settings.json stays tracked
+.claude/settings.local.json
+
+# Personal notes
+NOTES.md
+DOCS.md
+TODO.md
+
+# configDir-as-package fixture: fake node_modules, must be tracked
+!spec/fixtures/*/node_modules/

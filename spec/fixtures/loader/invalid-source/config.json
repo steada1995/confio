@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "db": {
+    "mongodb": {
+      "host": { "source": "ftp", "key": "MONGODB_HOST" }
+    }
+  }
+}

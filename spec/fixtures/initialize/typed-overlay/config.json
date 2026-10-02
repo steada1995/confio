@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "http": {
+    "port":    { "source": "env", "key": "HTTP_PORT" },
+    "debug":   { "source": "env", "key": "HTTP_DEBUG" },
+    "host":    { "source": "env", "key": "HTTP_HOST" }
+  }
+}

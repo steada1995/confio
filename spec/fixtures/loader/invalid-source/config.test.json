@@ -1,0 +1,7 @@
+{
+  "db": {
+    "mongodb": {
+      "host": "mongo.lab"
+    }
+  }
+}
