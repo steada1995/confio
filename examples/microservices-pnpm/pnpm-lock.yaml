@@ -1,0 +1,40 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+  injectWorkspacePackages: true
+
+importers:
+
+  .: {}
+
+  config: {}
+
+  services/api:
+    dependencies:
+      '@example/config':
+        specifier: workspace:*
+        version: link:../../config
+      confio:
+        specifier: file:../../../..
+        version: file:../..
+
+  services/billing:
+    dependencies:
+      '@example/config':
+        specifier: workspace:*
+        version: link:../../config
+      confio:
+        specifier: file:../../../..
+        version: file:../..
+
+packages:
+
+  confio@file:../..:
+    resolution: {directory: ../.., type: directory}
+    engines: {node: '>=18'}
+
+snapshots:
+
+  confio@file:../..: {}

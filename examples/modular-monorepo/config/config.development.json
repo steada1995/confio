@@ -1,0 +1,15 @@
+{
+  "http": {
+    "port": "3000"
+  },
+  "db": {
+    "mongodb": {
+      "host":          "localhost",
+      "adminPassword": "dev-password"
+    }
+  },
+  "queue": {
+    "url":       "amqp://localhost:5672",
+    "batchSize": "10"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "http": {
+    "port": { "source": "env", "key": "PORT" }
+  },
+  "web": {
+    "apiBaseUrl": { "source": "env", "key": "WEB_API_BASE_URL" },
+    "appName":    { "source": "env", "key": "WEB_APP_NAME" }
+  },
+  "db": {
+    "mongodb": {
+      "host":          { "source": "env", "key": "MONGODB_HOST" },
+      "adminPassword": { "source": "env", "key": "MONGODB_ADMIN_PASSWORD", "secret": true }
+    }
+  }
+}

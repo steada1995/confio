@@ -1,0 +1,11 @@
+{
+  "name": "api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "confio": "file:../../../.."
+  }
+}

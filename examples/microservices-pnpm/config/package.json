@@ -1,0 +1,6 @@
+{
+  "name": "@example/config",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The config directory itself: config.json plus its overlays, nothing else"
+}

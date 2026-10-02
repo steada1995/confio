@@ -1,0 +1,14 @@
+{
+  "http": {
+    "port": "3001"
+  },
+  "db": {
+    "mongodb": {
+      "host":          "localhost",
+      "adminPassword": "dev-password"
+    }
+  },
+  "billing": {
+    "stripeKey": "sk_test_dev"
+  }
+}

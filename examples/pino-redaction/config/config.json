@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "http": {
+    "port": { "source": "env", "key": "PORT" }
+  },
+  "db": {
+    "mongodb": {
+      "host":          { "source": "env", "key": "MONGODB_HOST" },
+      "adminPassword": { "source": "env", "key": "MONGODB_ADMIN_PASSWORD", "secret": true }
+    }
+  }
+}

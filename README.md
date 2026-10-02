@@ -250,7 +250,8 @@ await initialize({ configDir: '@example/config', requiredConfig: '…' })
 ```
 
 This is for config shipped as a workspace package, declared by each service among its own
-dependencies.
+dependencies. That is how
+[`examples/microservices-pnpm`](./examples/microservices-pnpm) is built.
 
 ---
 
@@ -265,7 +266,8 @@ Mark the leaf and the rest follows:
 The package resolves the value and hands it back as it is; who hides it from the logs is
 your logger. `secretPaths()` returns the dot-paths of the resolved leaves declared as
 secret: a secret leaf left out of `REQUIRED_CONFIG` is not in the config, so it is not
-listed either.
+listed either. How it hooks into pino, and what stays uncovered, is in
+[`examples/pino-redaction`](./examples/pino-redaction).
 
 ---
 
@@ -358,6 +360,24 @@ One more comes from calling `initialize()` a second time with different options:
 ```
 Startup failed: initialize() was already called with different options (requiredConfig: "http.port" vs "db.mongodb.host") — the config is loaded once per process: …
 ```
+
+---
+
+## Examples
+
+Four runnable projects, each with its own README:
+
+- [`modular-monorepo/`](./examples/modular-monorepo) — one `config/` in the repo root,
+  shared by every service. npm workspaces.
+- [`microservices-pnpm/`](./examples/microservices-pnpm) — `config/` as a dependency: a
+  workspace package each service declares and names in `configDir`. pnpm.
+- [`monorepo-react/`](./examples/monorepo-react) — a backend and a React frontend on one
+  config: the browser gets only the public leaves, from an endpoint.
+- [`pino-redaction/`](./examples/pino-redaction) — `secretPaths()` handed to
+  `pino({ redact })`, with the five covered and uncovered cases.
+
+`examples/providers/` holds two reference providers built on the official SDKs, meant to be
+copied into your own project: `aws.provider.js` and `azure.provider.js`.
 
 ---
 

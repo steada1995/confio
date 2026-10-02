@@ -1,0 +1,10 @@
+{
+  "name": "microservices-pnpm-example",
+  "private": true,
+  "type": "module",
+  "description": "The config directory as a workspace dependency of every service",
+  "scripts": {
+    "start:api":     "pnpm -F api start",
+    "start:billing": "pnpm -F billing start"
+  }
+}

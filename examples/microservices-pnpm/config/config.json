@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "http": {
+    "port": { "source": "env", "key": "PORT" }
+  },
+  "db": {
+    "mongodb": {
+      "host":          { "source": "env",  "key": "MONGODB_HOST" },
+      "adminPassword": { "source": "file", "key": "mongodb_admin_password", "secret": true }
+    }
+  },
+  "billing": {
+    "stripeKey": { "source": "file", "key": "stripe_api_key", "secret": true }
+  }
+}

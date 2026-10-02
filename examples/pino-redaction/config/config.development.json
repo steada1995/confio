@@ -1,0 +1,9 @@
+{
+  "http": { "port": "3000" },
+  "db": {
+    "mongodb": {
+      "host":          "mongo.lab",
+      "adminPassword": "local-password"
+    }
+  }
+}

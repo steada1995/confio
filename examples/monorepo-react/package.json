@@ -1,0 +1,11 @@
+{
+  "name": "monorepo-react-example",
+  "private": true,
+  "type": "module",
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "start:api": "npm start --workspace api",
+    "dev:web":   "npm run dev --workspace web",
+    "build:web": "npm run build --workspace web"
+  }
+}

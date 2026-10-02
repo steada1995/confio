@@ -1,0 +1,14 @@
+{
+  "name": "modular-monorepo-example",
+  "private": true,
+  "type": "module",
+  "description": "One config/ directory in the repo root, shared by every service",
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "start:api":    "npm -w api start",
+    "start:worker": "npm -w worker start"
+  },
+  "dependencies": {
+    "confio": "file:../.."
+  }
+}
