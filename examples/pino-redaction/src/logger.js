@@ -1,5 +1,5 @@
 import pino from 'pino'
-import { secretPaths } from 'confio'
+import { secretPaths } from '@steada1995/confio'
 
 /**
  * Il logger dell'applicazione, costruito DOPO initialize().

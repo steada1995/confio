@@ -1,5 +1,5 @@
 import http from 'node:http'
-import { getConfig } from 'confio'
+import { getConfig } from '@steada1995/confio'
 import { connectionString } from './db.js'
 
 export const startServer = () => {

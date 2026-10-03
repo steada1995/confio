@@ -7,6 +7,6 @@
   },
   "dependencies": {
     "@example/config": "workspace:*",
-    "confio": "file:../../../.."
+    "@steada1995/confio": "file:../../../.."
   }
 }

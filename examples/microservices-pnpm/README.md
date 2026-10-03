@@ -36,7 +36,7 @@ Il servizio la dichiara come qualunque altra dipendenza:
 ```json
 "dependencies": {
   "@example/config": "workspace:*",
-  "confio": "file:../../../.."
+  "@steada1995/confio": "file:../../../.."
 }
 ```
 
@@ -182,9 +182,9 @@ nell'immagine perché è una dipendenza, come il resto.
 
 ## Note
 
-`"confio": "file:../../../.."` è un artefatto dell'esempio: il package non è
+`"@steada1995/confio": "file:../../../.."` è un artefatto dell'esempio: il package non è
 pubblicato e questo lo collega alla cartella sorgente, quattro livelli sopra. In un progetto
-vero è una dipendenza qualunque — `"confio": "^1.0.0"` — mentre `@example/config`
+vero è una dipendenza qualunque — `"@steada1995/confio": "^1.0.0"` — mentre `@example/config`
 resta `workspace:*` finché è un pacchetto del monorepo.
 
 `config/config.development.json` è versionato perché l'esempio sia eseguibile subito. In un

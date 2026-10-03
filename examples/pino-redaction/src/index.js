@@ -1,4 +1,4 @@
-import { initialize, getConfig, secretPaths } from 'confio'
+import { initialize, getConfig, secretPaths } from '@steada1995/confio'
 import { buildLogger } from './logger.js'
 
 const CONFIG_DIR = new URL('../config', import.meta.url).pathname

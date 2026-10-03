@@ -13,7 +13,7 @@ npm start
 
 ```javascript
 import pino from 'pino'
-import { initialize, getConfig, secretPaths } from 'confio'
+import { initialize, getConfig, secretPaths } from '@steada1995/confio'
 
 await initialize({ requiredConfig: 'db.mongodb.adminPassword' })
 

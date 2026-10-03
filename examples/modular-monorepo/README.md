@@ -142,9 +142,9 @@ come una dipendenza: vedi [`../microservices-pnpm/`](../microservices-pnpm).
 
 ## Note
 
-`"confio": "file:../../../.."` nei `package.json` dei servizi è un artefatto
+`"@steada1995/confio": "file:../../../.."` nei `package.json` dei servizi è un artefatto
 dell'esempio: il package non è pubblicato e questo lo collega alla cartella sorgente. In un
-progetto vero è una dipendenza qualunque, `"confio": "^1.0.0"`.
+progetto vero è una dipendenza qualunque, `"@steada1995/confio": "^1.0.0"`.
 
 `config.development.json` è versionato qui perché l'esempio sia eseguibile subito. In un
 progetto vero va in `.gitignore`: contiene valori di sviluppo, e il `.gitignore` di questo

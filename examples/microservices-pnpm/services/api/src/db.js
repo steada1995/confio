@@ -1,4 +1,4 @@
-import { getConfig } from 'confio'
+import { getConfig } from '@steada1995/confio'
 
 export const connectionString = () => {
   const { host, adminPassword } = getConfig().db.mongodb

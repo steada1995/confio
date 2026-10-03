@@ -1,4 +1,4 @@
-import { getConfig } from 'confio'
+import { getConfig } from '@steada1995/confio'
 
 /**
  * Le sole foglie che il browser può vedere.

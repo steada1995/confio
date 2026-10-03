@@ -6,6 +6,6 @@
     "start": "node src/index.js"
   },
   "dependencies": {
-    "confio": "file:../../../.."
+    "@steada1995/confio": "file:../../../.."
   }
 }

@@ -16,7 +16,7 @@ importers:
       '@example/config':
         specifier: workspace:*
         version: link:../../config
-      confio:
+      '@steada1995/confio':
         specifier: file:../../../..
         version: file:../..
 
@@ -25,16 +25,16 @@ importers:
       '@example/config':
         specifier: workspace:*
         version: link:../../config
-      confio:
+      '@steada1995/confio':
         specifier: file:../../../..
         version: file:../..
 
 packages:
 
-  confio@file:../..:
+  '@steada1995/confio@file:../..':
     resolution: {directory: ../.., type: directory}
     engines: {node: '>=18'}
 
 snapshots:
 
-  confio@file:../..: {}
+  '@steada1995/confio@file:../..': {}

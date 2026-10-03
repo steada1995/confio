@@ -9,6 +9,6 @@
     "start:worker": "npm -w worker start"
   },
   "dependencies": {
-    "confio": "file:../.."
+    "@steada1995/confio": "file:../.."
   }
 }

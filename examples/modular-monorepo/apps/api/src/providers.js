@@ -1,4 +1,4 @@
-import { providerFactory } from 'confio'
+import { providerFactory } from '@steada1995/confio'
 
 /**
  * Il provider custom va registrato prima di initialize().

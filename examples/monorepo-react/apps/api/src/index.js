@@ -1,4 +1,4 @@
-import { initialize } from 'confio'
+import { initialize } from '@steada1995/confio'
 import { CONFIG_DIR } from './config-dir.js'
 import { startServer } from './server.js'
 

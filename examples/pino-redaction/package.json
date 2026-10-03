@@ -7,6 +7,6 @@
   },
   "dependencies": {
     "pino": "^10.3.1",
-    "confio": "file:../.."
+    "@steada1995/confio": "file:../.."
   }
 }
